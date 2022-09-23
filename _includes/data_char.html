@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<script src="https://square.github.io/crossfilter/crossfilter.v1.min.js"></script>
+<script src="https://dc-js.github.io/dc.js/js/d3.js"></script>
+<script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+
+<div>
+    <div id="d3-conteiner"></div>
+</div>
+<script src="website\js\data.js"></script>
+
+<!--<script src="{{ url_for(request.blueprint+'.static', filename ='js/data.js') }}"></script>-->
+
+var chart = new dc.LineChart('')
+{% endblock %}
+

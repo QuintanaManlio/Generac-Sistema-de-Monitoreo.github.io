@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}home{% endblock %}
+
+{% block content %}
+<div class="form-group">
+    <label class="control-label">Enter a Name</label>
+    <input id="name">
+</div>
+<div class="form-group">
+    <label for="email" class="control-label">Enter your E-Mail</label>
+    <div class="input" id="email">
+  </div>
+  
+  <script>
+  bootstrapValidate('#email', 'email:Enter a valid email address');
+  bootstrapValidate('#name', 'max:30:Your name must not be longer than 30 characters');
+  </script>
+{% endblock %}
